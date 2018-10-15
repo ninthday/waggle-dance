@@ -1,6 +1,17 @@
 [BASE]
 cwb_token = abcde
+line_token = defgh
+username = bob
 
-[location_1]
+[EXMESSAGE]
+morning = 
+noon =
+evening = 
+
+[LOCATION_1]
 data_id = F-D0047-077
 location_name = 東區
+
+[LOCATION_2]
+data_id = F-D0047-077
+location_name = 新市區
