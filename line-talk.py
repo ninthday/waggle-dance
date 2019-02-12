@@ -2,6 +2,7 @@
 
 import os
 import requests
+import json
 from argparse import ArgumentParser
 from configparser import ConfigParser
 from datetime import datetime
@@ -129,6 +130,9 @@ if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     config = ConfigParser()
     config.read(dir_path + '/config.ini')
+
+    with open(dir_path + '/sweet.json', 'r') as f:
+        sweet = json.load(f)
 
     parser = ArgumentParser(description="蜜蜂搖擺舞，Line Notify 天氣通知")
     parser.add_argument("period", choices=['morning', 'noon', 'evening'], 
